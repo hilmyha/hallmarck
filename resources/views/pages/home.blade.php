@@ -1,4 +1,22 @@
 <x-app-layout title="Home">
+  {{-- hero --}}
+  <section class="bg-gray-100 mt-20 md:mt-24 overflow-hidden">
+    <div class="h-[400px] xl:h-[600px] container flex items-center gap-2 xl:px-14">
+      
+      <div class=" p-4 w-full">
+        <h1 class="mb-4 text-4xl lg:text-5xl font-bold tracking-tight text-gray-900">Select your new <span class="text-primary-600 auto-type"></span> style.</h1>
+        <p class="text-lg lg:text-xl mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima praesentium nulla qui deserunt veritatis asperiores accusantium odit sed rerum maiores.</p>
+
+        <button type="button" class="text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:ring-primary-600 rounded-lg text-md px-5 py-2.5 mr-2 mb-2 focus:outline-none">Shop Now</button>
+      </div>
+
+      <div class="relative p-4 w-full h-full hidden lg:block">
+        
+        <img src="{{ asset('assets/img/001.png') }}" class="z-10 absolute -right-20 -bottom-32 object-contain hover:-translate-y-5 transition">
+
+      </div>
+    </div>
+  </section>
   
   {{-- new arrivals --}}
   <x-section>
@@ -52,7 +70,7 @@
   </x-section>
 
   {{-- shipping --}}
-  <section class="container border my-20 md:my-24">
+  <section class="container my-20 md:my-24">
     <div class="p-6 bg-primary-600 rounded-md grid grid-flow-row xl:grid-flow-col gap-8 text-white">
       <div class="p-5">
         {{-- svg --}}

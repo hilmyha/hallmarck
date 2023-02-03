@@ -1,7 +1,7 @@
 {{-- navbar --}}
 <header class="bg-white px-2 mobile:px-4 py-4 fixed w-full z-20 top-0 left-0 border-b shadow-lg border-gray-200">
   <div class="container flex flex-wrap items-center justify-between border">
-    <a href="#">
+    <a href="/">
       <span class="self-center text-xl font-semibold whitespace-nowrap">
         {{ $title }}
       </span>
@@ -9,12 +9,12 @@
   
   
     <div class="flex md:order-2">
-        <button type="button" class="text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-600 font-medium rounded-lg text-sm px-2.5 py-2.5 text-center mr-3 md:mr-0">
+        <a href="/login" class="text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-600 font-medium rounded-lg text-sm px-2.5 py-2.5 text-center mr-3 md:mr-0">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 block tablet:hidden">
             <path fill-rule="evenodd" d="M7.5 3.75A1.5 1.5 0 006 5.25v13.5a1.5 1.5 0 001.5 1.5h6a1.5 1.5 0 001.5-1.5V15a.75.75 0 011.5 0v3.75a3 3 0 01-3 3h-6a3 3 0 01-3-3V5.25a3 3 0 013-3h6a3 3 0 013 3V9A.75.75 0 0115 9V5.25a1.5 1.5 0 00-1.5-1.5h-6zm10.72 4.72a.75.75 0 011.06 0l3 3a.75.75 0 010 1.06l-3 3a.75.75 0 11-1.06-1.06l1.72-1.72H9a.75.75 0 010-1.5h10.94l-1.72-1.72a.75.75 0 010-1.06z" clip-rule="evenodd" />
           </svg>   
           <span class="hidden tablet:block">Login</span>
-        </button>
+        </a>
         
         <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200" aria-controls="navbar-sticky" aria-expanded="false">
           <span class="sr-only">Open main menu</span>
